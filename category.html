@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="category.css" />
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="container-fluid p-0">
+
+    <!--HEADER PART-->
+    <div class="header">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'getirbutton')">
+          getir
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
+          getiryemek
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
+          getirbüyük
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
+          getirsu
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
+          getirçarşı
+        </button>
+
+        <div class="tab-left">
+          <button class="left-btn" id="lnBtn">
+            <a><i class="fa-solid fa-globe lan-icon"></i></a> <span class="ln-title">Türkçe (TR)</span>
+          </button>
+          <button class="left-btn" id="signinBtn" onclick="showSignInModal()" >
+            <i class="fa-solid fa-user hdr-btn"></i> Giriş yap
+          </button>
+          <button class="left-btn" id="signUpBtn" type="button" onclick="showSignUpModal()">
+            <i class="fa-solid fa-user-plus hdr-btn"></i>
+            Kayıt Ol
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <div class="header-getir ">
+      <h5 class="getir-title" onclick="openIndexPage()">getir</h5>
+    </div>
+    <!--CAMPAIGN IMAGE PART-->
+    <div class="campaign-category ">
+
+      <div class="camp-image">
+        <img src="assets/images/kampanya.jpeg" alt="" class="camp-img img" id="lastClone">
+      </div>
+      <div class="camp-image">
+        <img src="assets/images/kmpn4.jpeg" alt="" class="camp-img img">
+
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <h8>Kategoriler</h8>
+      <h8 class="product-title-cat">Yeni Ürünler > Yeni Ürünler</h8>
+      <h8 class="basket-title">Sepetim</h8>
+      <!--CATEGORY FILTER LIST-->
+      <div class="category-filter">
+        <div class="list-product">
+          <button class="button-filter " type="button" id="yeniurunlerbtn" onclick="showMore(this.id)">
+            <img src="assets/images/yeniürün.jpeg" alt="Card image cap">
+            <span class="filter-title">Yeni Ürünler</span>
+            <i class="fa-solid fa-angle-down filter-icon " id="icondown"></i>
+            <i class="fa-solid fa-angle-up filter-icon " id="iconup"></i>
+          </button>
+          <div>
+
+          </div>
+          <button class="button-filter " type="button" id="indirimlerbtn" onclick="showMore(this.id)">
+            <img src="assets/images/indirim.jpeg" alt="Card image cap">
+            <span class="filter-title">İndirimler</span>
+            <i class="fa-solid fa-angle-down filter-icon " id="icondown"></i>
+            <i class="fa-solid fa-angle-up filter-icon " id="iconup"></i>
+          </button>
+          <div>
+
+          </div>
+          <button class="button-filter " type="button" id="suicecekbtn" onclick="showMore(this.id)">
+            <img src="assets/images/suicecek.jpeg" alt="Card image cap">
+            <span class="filter-title">Su & İçecek</span>
+            <i class="fa-solid fa-angle-down filter-icon " id="icondown"></i>
+            <i class="fa-solid fa-angle-up filter-icon " id="iconup"></i>
+          </button>
+          <div>
+
+          </div>
+
+          <button class="button-filter " type="button" id="meyvesebzebtn" onclick="showMore(this.id)">
+            <img src="assets/images/meyvesbze.jpeg" alt="Card image cap">
+            <span class="filter-title">Meyve & Sebze</span>
+            <i class="fa-solid fa-angle-down filter-icon " id="icondown"></i>
+            <i class="fa-solid fa-angle-up filter-icon " id="iconup"></i>
+          </button>
+          <div>
+
+          </div>
+          <button class="button-filter " type="button" id="fırındanbtn" onclick="showMore(this.id)">
+            <img src="assets/images/cips.jpeg" alt="Card image cap">
+            <span class="filter-title">Fırından</span>
+            <i class="fa-solid fa-angle-down filter-icon " id="icondown"></i>
+            <i class="fa-solid fa-angle-up filter-icon " id="iconup"></i>
+          </button>
+          <div>
+
+          </div>
+
+        </div>
+        <!--PRODUCT INFO AND IMAGES-->
+        <div class="category-products">
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/dalin.jpeg" alt="" class="p-img" id="imgProduct" >
+              <p class="p-price">₺68,63</p>
+              <h7 class="p-name">Dalin Sıvı Deterjan</h7>
+              <p class="p-width"> 1,5 L </p>
+
+            </div>
+
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/sabun.jpeg" alt="" class="p-img">
+              <p class="p-price">₺64,90</p>
+              <h7 class="p-name">Narpump Şarjlı Su Pompası (Siyah)</h7>
+              <p class="p-width"> </p>
+
+            </div>
+            <i class="fa-solid fa-plus add-btn " onclick="showSignInModal()"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/fairy.jpeg" alt="" class="p-img">
+              <p class="p-price">₺18,76</p>
+              <h7 class="p-name">Fairy Platinum Hijyen</h7>
+              <p class="p-width"> 500 ml </p>
+            </div>
+            <i class="fa-solid fa-plus add-btn"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/pril.jpeg" alt="" class="p-img">
+              <p class="p-price">₺26,82</p>
+              <h7 class="p-name">Pril Losyon Aloe Vera</h7>
+              <p class="p-width"> 1440 g </p>
+            </div>
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/tursil.jpeg" alt="" class="p-img">
+              <p class="p-price">₺46,21</p>
+              <h7 class="p-name">Tursil Jel Leylak Bahçesi</h7>
+              <p class="p-width"> 2145 ml</p>
+            </div>
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+              <p class="p-price">₺6,99</p>
+              <h7 class="p-name">Ankara Makarna</h7>
+              <p class="p-width"> 6x200 mL </p>
+            </div>
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/süt.jpeg" alt="" class="p-img">
+              <p class="p-price">₺12,75</p>
+              <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+              <p class="p-width"> 1 L </p>
+            </div>
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+          </div>
+          <div class="product-cards">
+            <div class="p-image">
+              <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+              <p class="p-price">₺6,99</p>
+              <h7 class="p-name">Ankara Makarna</h7>
+              <p class="p-width"> 6x200 mL </p>
+            </div>
+            <i class="fa-solid fa-plus add-btn" onclick="showSignInModal()"></i>
+          </div>
+
+        </div>
+        <!--BASKET PART-->
+        <div class="category-basket-card">
+          <div class="category-basket">
+            <img src="assets/images/basket.png">
+            <h4 class="basket-desc-title">Sepetiniz şu an boş</h4>
+            <h5 class="basket-desc-small">Sipariş vermek için sepetinize ürün ekleyin</h5>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--MODELS-->
+  <div id="imageinfoModal" class="getir-imgInfo-modal">
+    <!-- Modal Product Info -->
+    <div class="modal-content-image-info">
+      <div class="header-imgInfo">
+        <p class="fav-header"><button class="fav-button" id="favBtn"><i class="fa-regular fa-heart" id="heart"></i>Favorilere Ekle</p></button>
+        <button id="closeImgInfo" type="button"><span class="close-imgInfo-modal">&times;</span></button>
+      </div>
+      <hr>
+
+      <div class="slider-product" id="sliderProduct">
+       <div class="carousel__track__container">
+        <button type="button" class="arrow-btn " id="prevbtn" > 
+          <i class="fa-solid fa-chevron-left "></i>
+        </button>
+
+        <div class="product-img ">
+          <img src="assets/images/dalin.jpeg" class="product-img-info current-slide">
+          <img src="assets/images/dalinbck.jpeg" class="product-img-info"id="bckimage">
+        </div>
+        <button type="button" class="arrow-btn " id="nextbtn"> <i class="fa-solid fa-chevron-right"></i></button>
+        <!-- The dots/circles -->
+      </div>
+        <div class="slider-dot">
+          <button class="dot-btn">
+            <span class="dot selected"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-name">
+        <h3>Dalin Sıvı Çamaşır Deterjanı 20 Yıkama</h3>
+        <small>1,5 L</small>
+      </div>
+      <hr>
+      <div class="product-price-qt">
+        <div class="counter">
+          <span class="down" onclick='decreaseCount(event, this)'>-</span>
+          <input type="text" value="1">
+          <span class="up" onclick='increaseCount(event, this)'>+</span>
+        </div>
+        <div class="product-prices">
+          <button type="button" class="add-basket-btn" onclick="showSignInModal()">Sepete Ekle</button>
+          <p class="product-price"><strong>₺68,63</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="changeLanguageModal" class="getir-modals">
+
+    <!-- Modal content -->
+    <div class="modal-content-language">
+      <span class="close-Language-Modal" id="closeLN">&times;</span>
+      <h7 class="modal-title">Dil değiştir</h7>
+
+      <div class="form-check-lan">
+        <input class="form-check-input1" type="radio" name="flexRadioDefault" id="trbtn" checked>
+        <label class="form-check-label1" for="flexRadioDefault1">
+          Türkçe
+        </label>
+        <img class="ln-tr-flag" src="assets/images/tr-flag.png">
+        <hr class="new">
+
+        <input class="form-check-input2" type="radio" name="flexRadioDefault" id="engbtn">
+        <label class="form-check-label2" for="flexRadioDefault2">
+          English
+        </label>
+        <img class="lan-flag" src="assets/images/usa.jpg">
+
+      </div>
+      <button class="update-btn2" id="upBtn">Güncelle</button>
+    </div>
+
+  </div>
+  <div id="signInUpModal" class="getir-modals">
+
+    <!-- Modal content Giriş yap -->
+    <div class="modal-content-signIn">
+      <span class="close-signIn-model" id="closeSignIn">&times;</span>
+      <h7 class="modal-title">Giriş yap veya kayıt ol</h7>
+
+      <div class="phone-num mt-4">
+        <form class="cntry-code2">
+          <select class="cntry-code">
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+          </select>
+
+          <input class="entr-phne" type="tel" placeholder="Telefon Numarası" id="phonenum">
+
+      </div>
+      <button class="phone-btn" type="button" id="phoneBtn" onclick="showSignUpModal() ">
+        Telefon numarası ile devam et
+
+      </button>
+      <p class="kvkk-info">Kişisel verilerinize dair Aydınlatma Metni için <a
+          href="https://getir.com/yardim/kvkk/"><strong>tıklayınız.</strong></a>
+      </p>
+      <div class="modal-down">
+        <p>Hala kayıt olmadınız mı? <a href="#" id="movesignup" onclick="showSignUpModal() "><strong>Kayıt
+              Ol</strong></a></p>
+      </div>
+    </div>
+
+  </div>
+  <div id="signUp" class="getir-modals">
+
+    <!-- Modal content -->
+    <div class="modal-content-signup">
+      <span class="close-signUp-modal" id="closeSignUp">&times;</span>
+      <h7 class="modal-title "><strong>Kayıt Ol</strong></h7>
+
+      <div class="phone-num mt-4">
+        <form class="cntry-code2">
+          <select class="cntry-code">
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+          </select>
+
+          <input class="entr-phne" type="tel" placeholder="Telefon Numarası">
+
+      </div>
+      <form class="sign-up">
+        <div class="mb-3 form-style">
+          <input type="text" class=" form-cntrl" placeholder="Ad Soyad">
+
+
+        </div>
+        <div class="mb-3 form-style">
+
+          <input type="email" class=" form-cntrl" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="E-mail">
+
+        </div>
+        <div class="check-model3">
+          <input type="checkbox" checked="checked" class="checkbox-m3">
+          <span class="checkmarkk"></span>
+          <p class="check-desc">Getir'in bana özel kampanya, tanıtım fırsatlarından haberdar olmak istiyorum.</p>
+        </div>
+      </form>
+      <ul class="desc-kvkk-inf">
+        <li>
+          <p class="kvkk-info">Kayıt olmakla<a href="https://getir.com/yardim/kullanim-kosullari/"> Kullanım
+              Koşulları</a>'nı onaylamış olursunuz. </p>
+        </li>
+        <li>
+          <p class="kvkk-info">Kişisel verilerinize dair Aydınlatma Metni için <a
+              href="https://getir.com/yardim/kvkk/">tıklayınız.</a></p>
+        </li>
+      </ul>
+      <div class="">
+        <button class="signup-btn">Kayıt Ol</button>
+      </div>
+      <div class="modal-down">
+        <p>Getir'e üyeyseniz <a href="#" id="movesignin" onclick="showSignInModal()">Giriş yap </a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--MODELS FINISH-->
+
+  <script src="getir.js"></script>
+  <script src="category.js"></script>
+</body>
+
+</html>

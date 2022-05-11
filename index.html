@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+ 
+  <!-- Kategori-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100;300;400&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+  <!--HEADER-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Ubuntu+Condensed&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <section class="container-fluid p-0  ">
+    <div class="header  ">
+       
+      <div class="tab">
+        <button class="tablinks " onclick="openCity(event, 'getirbutton')">
+          getir
+        </button>
+        <button class="tablinks " onclick="openCity(event, 'getiryemek')">
+          getiryemek
+        </button>
+        <button class="tablinks "  onclick="openCity(event, 'getiryemek')">
+          getirbüyük
+        </button>
+        <button class="tablinks " onclick="openCity(event, 'getiryemek')">
+          getirsu
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
+          getirçarşı
+        </button>
+      </div>
+      <div class="tab-left">
+          <button class="left-btn" id="lnBtn">
+            <a><i class="fa-solid fa-globe lan-icon"></i></a> <span class="ln-title">Türkçe (TR)</span>
+          </button>
+          <button class="left-btn" id="signinBtn" onclick="showSignInModal()">
+            <i class="fa-solid fa-user hdr-btn"></i><span class="ln-title">Giriş yap</span> 
+          </button>
+          <button class="left-btn" id="signUpBtn" type="button" onclick="showSignUpModal()">
+            <i class="fa-solid fa-user-plus hdr-btn"></i>
+            <span class="ln-title">Kayıt Ol</span>  
+          </button>
+  
+        </div>
+  
+    </div>
+
+    <div id="getirbutton" class="tabcontent">
+      <div class="slider">
+        <div class="slide">
+          <div class="slide-image">
+            <img src="assets/images/slide1.png" />
+          </div>
+          <div class="slide-image">
+            <img src="assets/images/slider2.jpg" />
+          </div>
+          <div class="slide-image">
+            <img src="assets/images/slider3.jpg" />
+          </div>
+          <div class="slide-image">
+            <img src="assets/images/slider4.jpg" />
+          </div>
+        </div>
+        <div class="slide-right">
+          <img src="assets/images/getirlogo.png" class="logo" />
+          <h3 class="slogan">Dakikalar içinde kapınızda</h3>
+        </div>
+        <div class="slide-left">
+          <div class="title-left">
+            <span>
+              Giriş yap veya kayıt ol
+            </span>
+          </div>
+          <div class="phone-num mt-4">
+            <form class="cntry-code2">
+              <select class="cntry-code">
+                <option value="1">+1</option>
+                <option value="2">+2</option>
+                <option value="3">+3</option>
+                <option value="4">+4</option>
+              </select>
+
+              <input class="entr-phne" type="tel" placeholder="Telefon Numarası">
+
+          </div>
+          <button class="phone-btn" type="button" onclick="showSignInModal()">
+            Telefon numarası ile devam et
+
+          </button>
+        </div>
+
+      </div>
+      <h6 class="title-cat">Kategoriler</h6>
+      <div class="category">
+
+        <div class="cat-img">
+          <div class="card-category-cont">
+            <img class="card-img-top" src="assets/images/yeniürün.jpeg" alt="Card image cap" id="yeniurunımg" onclick="openCategoryPage()">
+             <div class="card-body">
+             <span class="card-text-s">Yeni Ürünler</span>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="assets/images/indirim.jpeg" alt="Card image cap" id="indirimlerımg"onclick="openCategoryPage()" >
+            <div class="card-body">
+              <p class="card-text-s">İndirimler</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="assets/images/suicecek.jpeg" alt="Card image cap" id="suicecekImg" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Su & İçecek</p>
+            </div>
+          </div>
+
+          <div class="card-category-cont">
+            <img class="card-img-top" src="assets/images/meyvesbze.jpeg" alt="Card image cap" id="meyvesebzeImg" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Meyve & Sebze</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="assets/images/fırından.jpeg" alt="Card image cap" id="fırındanImg" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Fırından</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/56dfe03cf82055030022cdc0_1619242841966_1619242842053.jpeg" alt="Card image cap"id="atıstırmalıkImg" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Atıştırmalık</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/55bca8484dcda90c00e3aa80_1619242741382_1619242741482.jpeg" alt="Card image cap"id="dondurmaImg" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Dondurma</p>
+            </div>
+          </div>
+
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/5cfe685e25d48100016b7ea6_b05535e0-a936-4c79-8d89-10db178a928c.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Süt ürünleri</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/61a78ebbdea800061135fd19_1ae7279d-6ab8-4ee1-b58b-9a29695ad314.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Kahvaltılık</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5d_1619242660025_1619242660107.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Yiyecek</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/57e2996551f3ee030027e28b_1619242858559_1619242858642.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Fit & Form</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5c_1619242651249_1619242651335.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Kişisel Bakım</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/55449fdf02632e11003c2da8_1619242719523_1619242719602.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Ev Bakım</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/5b06b056b883b700044e3e4c_1619242916956_1619242917048.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Ev & Yaşam</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c62_1619242697597_1619242697702.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Teknoloji</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/551430043427d5010a3a5c63_1619242711604_1619242711687.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Evcil Hayvan</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5b_1619242620186_1619242620271.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Bebek</p>
+            </div>
+          </div>
+          <div class="card-category-cont">
+            <img class="card-img-top" src="https://cdn.getir.com/cat/559c07b093be370c0063dd29_a16cbca7-4f5a-46fc-8f45-45d8e899f57d.jpeg" alt="Card image cap" onclick="openCategoryPage()">
+            <div class="card-body">
+              <p class="card-text-s">Cinsel Sağlık</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="campaign">
+        <h6 class="title-cat t-camp">Kampanyalar</h6>
+        <div class="camp-image">
+          <img src="assets/images/kmpn1.jpeg" alt="" class="camp-img img" id="lastClone">
+        </div>
+        <div class="camp-image">
+          <img src="assets/images/kmpn2.jpeg" alt="" class="camp-img img">
+
+        </div>
+        <div class="camp-image">
+          <img src="assets/images/kmpn3.jpeg" alt="" class="camp-img img">
+
+        </div>
+        <div class="camp-image">
+          <img src="assets/images/kmpn4.jpeg" alt="" class="camp-img2 img">
+
+        </div>
+        <div class="camp-image">
+          <img src="assets/images/kmpn4.jpeg" alt="" class="camp-img2 img">
+
+        </div>
+        <div class="camp-image">
+          <img src="assets/images/kmpn1.jpeg" alt="" class="camp-img2 img" id="firstClone">
+
+        </div>
+
+      </div>
+
+      <h6 class="title-cat t-camp">Favoriler</h6>
+      <div class="fav-product">
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/soda.jpeg" alt="" class="p-img">
+            <p class="p-price">₺3,75</p>
+            <h7 class="p-name">Kızılay Erzincan</h7>
+            <p class="p-width"> 6x200 mL </p>
+
+          </div>
+           <div class="add-btn-container">
+          <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,75</p>
+            <h7 class="p-name">Ülker Napoliten</h7>
+            <p class="p-width"> 33 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/süt.jpeg" alt="" class="p-img">
+            <p class="p-price">₺12,75</p>
+            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+            <p class="p-width"> 1 L </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,99</p>
+            <h7 class="p-name">Ankara Makarna</h7>
+            <p class="p-width"> 6x200 mL </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/cips.jpeg" alt="" class="p-img">
+            <p class="p-price">₺10,75</p>
+            <h7 class="p-name">Lay's Mevsim Yeşillikli</h7>
+            <p class="p-width"> 96 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/mcun.jpeg" alt="" class="p-img">
+            <p class="p-price">₺38,75</p>
+            <h7 class="p-name">Colgate Optik White</h7>
+            <p class="p-width">75 ml </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/soda.jpeg" alt="" class="p-img">
+            <p class="p-price">₺3,75</p>
+            <h7 class="p-name">Kızılay Erzincan</h7>
+            <p class="p-width"> 6x200 mL </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,75</p>
+            <h7 class="p-name">Ülker Napoliten</h7>
+            <p class="p-width"> 33 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div> 
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/süt.jpeg" alt="" class="p-img">
+            <p class="p-price">₺12,75</p>
+            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+            <p class="p-width"> 1 L </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,99</p>
+            <h7 class="p-name">Ankara Makarna</h7>
+            <p class="p-width"> 6x200 mL </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/cips.jpeg" alt="" class="p-img">
+            <p class="p-price">₺10,75</p>
+            <h7 class="p-name">Lay's Mevsim Yeşillikli</h7>
+            <p class="p-width"> 96 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/mcun.jpeg" alt="" class="p-img">
+            <p class="p-price">₺38,75</p>
+            <h7 class="p-name">Colgate Optik White</h7>
+            <p class="p-width">75 ml </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/soda.jpeg" alt="" class="p-img">
+            <p class="p-price">₺3,75</p>
+            <h7 class="p-name">Kızılay Erzincan</h7>
+            <p class="p-width"> 6x200 mL </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,75</p>
+            <h7 class="p-name">Ülker Napoliten</h7>
+            <p class="p-width"> 33 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/süt.jpeg" alt="" class="p-img">
+            <p class="p-price">₺12,75</p>
+            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+            <p class="p-width"> 1 L </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,99</p>
+            <h7 class="p-name">Ankara Makarna</h7>
+            <p class="p-width"> 6x200 mL </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/cips.jpeg" alt="" class="p-img">
+            <p class="p-price">₺10,75</p>
+            <h7 class="p-name">Lay's Mevsim Yeşillikli</h7>
+            <p class="p-width"> 96 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/mcun.jpeg" alt="" class="p-img">
+            <p class="p-price">₺38,75</p>
+            <h7 class="p-name">Colgate Optik White</h7>
+            <p class="p-width">75 ml </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/soda.jpeg" alt="" class="p-img">
+            <p class="p-price">₺3,75</p>
+            <h7 class="p-name">Kızılay Erzincan</h7>
+            <p class="p-width"> 6x200 mL </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,75</p>
+            <h7 class="p-name">Ülker Napoliten</h7>
+            <p class="p-width"> 33 g </p>
+
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="p-image">
+            <img src="assets/images/süt.jpeg" alt="" class="p-img">
+            <p class="p-price">₺12,75</p>
+            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+            <p class="p-width"> 1 L </p>
+          </div>
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="getir-banner">
+        <img src="assets/images/banner.jpg" class="banner-img">
+        <div class="banner-right">
+          <h3 class="">Getir'i indirin!</h3>
+          <p>İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.</p>
+          <div class="app-container">
+            <div class="app-btn">
+              <div class="title-icon">
+                <i class="fa-brands fa-apple app-icon"></i>
+
+                <p class="app-title">App Store'dan </p>
+              </div>
+              <span class="down">indirin</span>
+
+            </div>
+            <div class="app-btn">
+              <div class="title-icon">
+                <img src="assets/images/googleplay.png" class="googleplay">
+
+                <p class="app-title">Google Play </p>
+              </div>
+              <span class="gp-title">'den Alın</span>
+
+            </div>
+            <div class="app-btn">
+              <div class="title-icon">
+                <img src="assets/images/appgallery.png" class="appgallery">
+
+                <p class="app-title">AppGallery </p>
+                <span class="gal-title">İle Keşfedin</span>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> <!-- getir button bitiş SİLME-->
+
+    <div id="getiryemekbutton" class="tabcontent"></div>
+  </section>
+  <section class="card-down container-fluid">
+    <div class="card1">
+      <img src="assets/images/card1.png" class="card-img">
+      <p class="card-title">Her siparişinize bir kampanya</p>
+      <p class="card-desc">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
+    </div>
+    <div class="card1">
+      <img src="assets/images/x.png" class="card-img">
+      <p class="card-title">Dakikalar içinde kapınızda</p>
+      <p class="card-desc">Dakikalar içinde kapınızda.</p>
+    </div>
+    <div class="card1">
+      <img src="assets/images/card2.png" class="card-img">
+      <p class="card-title">Binlerce çeşit mutluluk</p>
+      <p class="card-desc">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
+    </div>
+
+  </section>
+  <div class="footer-clean">
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer-des ">
+          <div class="col-sm-4 col-md-3 item ">
+            <h5>Getir'i İndirin!</h5>
+            <div class="app-container2">
+              <img src="assets/images/appstore.png" class="footer-app">
+              <img src="assets/images/appstore.png" class="footer-app">
+              <img src="assets/images/appstore.png" class="footer-app">
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-3 item ">
+            <h5>Getir'i Keşfedin</h5>
+            <ul>
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Kariyer</a></li>
+              <li><a href="#">Teknoloji Kariyeri</a></li>
+              <li><a href="#">İletişim</a></li>
+              <li><a href="#">COVID-19 Duyuru</a></li>
+              <li><a href="#">Sosyal Sorumluluk Projeleri</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item qr">
+            <h5>Yardıma mı ihtiyacınız var?</h5>
+            <ul>
+              <li><a href="#">Sıkça Sorulan Sorular</a></li>
+              <li><a href="#">Kişisel Verilerin Korunması</a></li>
+              <li><a href="#">Gizlilik Politikası</a></li>
+              <li><a href="#">Kullanım Koşulları</a></li>
+              <li><a href="#">Çerez Politikası</a></li>
+
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item qr">
+            <h5>İş Ortağımız Olun</h5>
+            <ul>
+              <li><a href="#">İş Ortağımız Olun</a></li>
+              <li><a href="#">Deponuzu Kiralayın</a></li>
+              <li><a href="#">GetirYemek Restoranı Olun</a></li>
+              <li><a href="#">GetirÇarşı İşletmesi Olun</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item qr ">
+            <div class="qr-img"></div>
+            <img src="assets/images/qr.png" class="qr-image">
+
+          </div>
+
+          <div class=" col-sm-4 col-md-3 ">
+
+
+            <p class="copyright"> © 2022 Getir </p>
+
+
+          </div>
+          <div class="icon">
+            <a><i class="fa-brands fa-facebook icons"></i> </a>
+            <a><i class="fa-brands fa-twitter icons"> </i></a>
+            <a><i class="fa-brands fa-instagram icons"></i> </a>
+            <div class="language">
+              <a><i class="fa-solid fa-globe lan-icon"></i> </a>
+              <p>Türkçe (TR)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--MODAL PART-->
+
+  <div id="changeLanguageModal" class="getir-modals">
+
+    <!-- Modal content -->
+    <div class="modal-content-language">
+      <span class="close-Language-Modal" id="closeLN">&times;</span>
+      <h7 class="modal-title">Dil değiştir</h7>
+
+      <div class="form-check-lan">
+        <input class="form-check-input1" type="radio" name="flexRadioDefault" id="trbtn" checked>
+        <label class="form-check-label1" for="flexRadioDefault1">
+          Türkçe
+        </label>
+        <img class="ln-tr-flag" src="assets/images/tr-flag.png">
+        <hr class="new">
+
+        <input class="form-check-input2" type="radio" name="flexRadioDefault" id="engbtn">
+        <label class="form-check-label2" for="flexRadioDefault2">
+          English
+        </label>
+        <img class="lan-flag" src="assets/images/usa.jpg">
+
+      </div>
+      <button class="update-btn2" id="upBtn">Güncelle</button>
+    </div>
+
+  </div>
+
+
+  <div id="signInUpModal" class="getir-modals">
+
+    <!-- Modal content Giriş yap -->
+    <div class="modal-content-signIn">
+      <span class="close-signIn-model" id="closeSignIn">&times;</span>
+      <h7 class="modal-title">Giriş yap veya kayıt ol</h7>
+
+      <div class="phone-num mt-4">
+        <form class="cntry-code2">
+          <select class="cntry-code">
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+          </select>
+
+          <input class="entr-phne" type="tel" placeholder="Telefon Numarası" id="phonenum">
+
+      </div>
+      <button class="phone-btn" type="button" id="phoneBtn" onclick="showSignUpModal() ">
+        Telefon numarası ile devam et
+
+      </button>
+      <p class="kvkk-info">Kişisel verilerinize dair Aydınlatma Metni için <a
+          href="https://getir.com/yardim/kvkk/"><strong>tıklayınız.</strong></a>
+      </p>
+      <div class="modal-down">
+        <p>Hala kayıt olmadınız mı? <a href="#" id="movesignup" onclick="showSignUpModal() "><strong>Kayıt Ol</strong></a></p>
+      </div>
+    </div>
+
+  </div>
+  <div id="signUp" class="getir-modals">
+
+    <!-- Modal content -->
+    <div class="modal-content-signup">
+      <span class="close-signUp-modal" id="closeSignUp">&times;</span>
+      <h7 class="modal-title "><strong>Kayıt Ol</strong></h7>
+
+      <div class="phone-num mt-4">
+        <form class="cntry-code2">
+          <select class="cntry-code">
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+          </select>
+
+          <input class="entr-phne" type="tel" placeholder="Telefon Numarası">
+
+      </div>
+      <form class="sign-up">
+        <div class="mb-3 form-style">
+          <input type="text" class=" form-cntrl" placeholder="Ad Soyad">
+
+
+        </div>
+        <div class="mb-3 form-style">
+
+          <input type="email" class=" form-cntrl" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="E-mail">
+
+        </div>
+        <div class="check-model3">
+          <input type="checkbox" checked="checked" class="checkbox-m3">
+          <span class="checkmarkk"></span>
+          <p class="check-desc">Getir'in bana özel kampanya, tanıtım fırsatlarından haberdar olmak istiyorum.</p>
+        </div>
+      </form>
+      <ul class="desc-kvkk-inf">
+        <li>
+          <p class="kvkk-info">Kayıt olmakla<a href="https://getir.com/yardim/kullanim-kosullari/"> Kullanım
+              Koşulları</a>'nı onaylamış olursunuz. </p>
+        </li>
+        <li>
+          <p class="kvkk-info">Kişisel verilerinize dair Aydınlatma Metni için <a
+              href="https://getir.com/yardim/kvkk/">tıklayınız.</a></p>
+        </li>
+      </ul>
+      <div class="">
+        <button class="signup-btn">Kayıt Ol</button>
+      </div>
+      <div class="modal-down">
+        <p>Getir'e üyeyseniz <a href="#" id="movesignin" onclick="showSignInModal()">Giriş yap </a></p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="getir.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
