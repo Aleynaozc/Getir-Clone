@@ -7,11 +7,7 @@
   --white-col:white;
   --getir-color:#ffd300;
 }
-body {
-  position: relative;
-  margin: 0px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
-}
+
 .container-fluid {
   max-width: 1500px;
   width: 100%;
@@ -20,6 +16,7 @@ body {
 }
 
 *{
+  
   margin:0;
   padding: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
@@ -467,7 +464,7 @@ input[type="radio"]:focus {
 }
 .slide-image{
   width: 100%;
-  max-height: 550px;
+  max-height: 500px;
   
 }
 
@@ -630,19 +627,24 @@ font-size:13px;
 .title-cat{
   font-size: 16px;  
   height:40px;
+  padding-top:20px;
+  padding-left: 90px;
+  background-color: var(--white-col);
+  left:200px ;
+  margin-bottom: 0;
+  
 }
-h6{
+/* h6{
   padding-top:20px;
   padding-left: 110px;
   background-color: var(--white-col);
   left:200px ;
   margin-bottom: 0!important;
-}
+} */
 
 
 .category{
  background-color: rgb(255, 255, 255);
- height:270px;
 }
 .cat-img{
   display: grid;
@@ -651,7 +653,6 @@ h6{
   background-color: var(--white-col);
   margin-left: 90px;
   row-gap: 40px;
-  
 }
 .cat-img .card-category-cont{
   display: flex;
@@ -681,7 +682,11 @@ h6{
   color:#6d44ea;
 }
 .t-camp{
-  background-color:#fafafa ;
+  font-size: 16px;  
+  padding-left: 50px;
+  left:200px;
+  margin-bottom: 0px;
+  color:black;
 }
 
 
@@ -717,10 +722,10 @@ h6{
 }
 
 .fav-product{
-  margin-left: 100px;
+  margin-left: 80px;
   margin-right: 99px;
   background-color: rgb(255, 255, 255);
-  margin-top: 5px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -1079,6 +1084,7 @@ left: 100px;
  }
  
  @media only screen and (max-width:1023px) {
+  
   .tab{
     display:flex;
   }
@@ -1092,7 +1098,109 @@ left: 100px;
       width: 720px;
       display: flex;
       justify-content: flex-end;
-      margin-left: 90px;}
+      margin-left: 90px;
+    }
+    .slide{
+      width: 50%;
+    }
+    .slide-image {
+      position: relative;
+      right: 350px; 
+     
+      width: 100%;
+    
+    }
+    .slide-left {
+      position: absolute;
+      top: 110px;
+      right: 10px;
+      width: 400;
+      background-color: #fafafa;
+      border-radius: 10px;
+  
+    }
+  
+    .slide-right {
+      top: 90px;
+      left: 30px;
+      width: 320px;
+      position: absolute;
+  
+    }
+     .logo{
+       width: 170px;
+       height: 170px;
+     }
+    .slogan {
+      position: relative;
+      color: var(--white-col);
+      top: 20px;
+      font-size: 35px;
+      font-weight: 100;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Courier, monospace;
+    }
+    
+ .title-cat{
+    font-size: 16px;  
+    height:40px;
+    padding-top:10px;
+    padding-left: 50px;
+    background-color: var(--white-col);
+    left:200px ;
+    margin-bottom: 0!important;
+    color:black;
+    
+ }
+ .cat-img{
+  display: grid;
+  grid-template-columns: 130px 135px 135px 135px 135px ;
+  grid-template-rows: 100px 100px;
+  background-color: var(--white-col);
+  margin-left: 60px;
 
-   
+  
+}
+.product-card{
+  width: 137px;
+  height: 206px;
+}
+   .fav-product{
+    margin-left: 80px;
+    margin-right: 99px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .getir-banner{
+    width:93%;
+    height: 412px;
+    margin-left: 80px;
+    position: relative;
+  }
+  .banner-img{
+    width:inherit;
+  }
+  .banner-right{
+    display: block;
+  }
+  .banner-title{
+    top:120px;
+  }
+  .banner-right{
+  
+    top:30px;
+    display: block;
+  }
+  .app-container{
+    display: block;
+  }
+  .app-btn{
+    margin-top:10px;
+  
+    width: 190px;
+  }
 }
