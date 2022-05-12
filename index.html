@@ -21,11 +21,19 @@
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Ubuntu+Condensed&display=swap"
     rel="stylesheet">
   <!--HEADER-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Ubuntu+Condensed&display=swap"
-    rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Shadows+Into+Light+Two&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+ <!--Mobile-title-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Shadows+Into+Light+Two&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+
+
 
 
 
@@ -46,19 +54,19 @@
 <body>
   
   <section class="container-fluid p-0  ">
-    <div class="header  ">
+    <div class="header">
        
       <div class="tab">
-        <button class="tablinks " onclick="openCity(event, 'getirbutton')">
+        <button class="tablinks" onclick="openCity(event, 'getirbutton')">
           getir
         </button>
-        <button class="tablinks " onclick="openCity(event, 'getiryemek')">
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
           getiryemek
         </button>
-        <button class="tablinks "  onclick="openCity(event, 'getiryemek')">
+        <button class="tablinks"  onclick="openCity(event, 'getiryemek')">
           getirbüyük
         </button>
-        <button class="tablinks " onclick="openCity(event, 'getiryemek')">
+        <button class="tablinks" onclick="openCity(event, 'getiryemek')">
           getirsu
         </button>
         <button class="tablinks" onclick="openCity(event, 'getiryemek')">
@@ -80,7 +88,49 @@
         </div>
   
     </div>
+    <!-- Added For Mobile Size -->
+    <div class="header-getir ">
+      <img class="getir-title" src="/assets/images/getir_title-.png" onclick="openIndexPage()"></img>
+    </div>
+    <div class="select-adress">
+      <i class="fa-solid fa-location-dot"></i><span class="adress-title">Teslimat Adresi Belirle</span>
+    </div>
+    <div class="for-mobile-slider">
+      <div class="slide-mobile">
+        <div class="mobile-slide-image">
+          <img src="assets/images/kampanya.jpeg" class="slide-img" />
+        </div>
+        <div class="mobile-slide-image">
+          <img src="assets/images/kmpn4.jpeg"class="slide-img" />
+        </div>
+        
+      </div>
+    </div>
+    <div class="signup-area">
+      <div class="signup-area-title">
+        <span>
+          Giriş yap veya kayıt ol
+        </span>
+      </div>
+      <div class="phone-num mt-4">
+        <form class="cntry-code2">
+          <select class="cntry-code">
+            <option value="1">+1</option>
+            <option value="2">+2</option>
+            <option value="3">+3</option>
+            <option value="4">+4</option>
+          </select>
 
+          <input class="entr-phne" type="tel" placeholder="Telefon Numarası">
+        </form>
+      </div>
+      <button class="phone-btn" type="button" onclick="showSignInModal()">
+        Telefon numarası ile devam et
+
+      </button>
+     
+    </div>
+     <!-- End -->
     <div id="getirbutton" class="tabcontent">
       <div class="slider">
         <div class="slide">
@@ -263,18 +313,23 @@
       <h6 class=" t-camp">Favoriler</h6>
       <div class="fav-product">
         <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
           <div class="p-image">
             <img src="assets/images/soda.jpeg" alt="" class="p-img">
-            <p class="p-price">₺3,75</p>
-            <h7 class="p-name">Kızılay Erzincan</h7>
-            <p class="p-width"> 6x200 mL </p>
+           
+          </div>
+          <p class="p-price">₺3,75</p>
+          <h7 class="p-name">Kızılay Erzincan</h7>
+          <p class="p-width"> 6x200 mL </p>
 
-          </div>
-           <div class="add-btn-container">
-          <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-          </div>
+           
         </div>
         <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
           <div class="p-image">
             <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
             <p class="p-price">₺6,75</p>
@@ -282,33 +337,36 @@
             <p class="p-width"> 33 g </p>
 
           </div>
+         
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/süt.jpeg" alt="" class="p-img">
             <p class="p-price">₺12,75</p>
             <h7 class="p-name">İçim %3 Yağlı Süt</h7>
             <p class="p-width"> 1 L </p>
           </div>
+         
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/makarna.jpeg" alt="" class="p-img">
             <p class="p-price">₺6,99</p>
             <h7 class="p-name">Ankara Makarna</h7>
             <p class="p-width"> 6x200 mL </p>
           </div>
+          
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/cips.jpeg" alt="" class="p-img">
             <p class="p-price">₺10,75</p>
@@ -316,11 +374,12 @@
             <p class="p-width"> 96 g </p>
 
           </div>
+        
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/mcun.jpeg" alt="" class="p-img">
             <p class="p-price">₺38,75</p>
@@ -328,11 +387,12 @@
             <p class="p-width">75 ml </p>
 
           </div>
+         
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/soda.jpeg" alt="" class="p-img">
             <p class="p-price">₺3,75</p>
@@ -340,81 +400,12 @@
             <p class="p-width"> 6x200 mL </p>
 
           </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
+          
         </div>
         <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
-            <p class="p-price">₺6,75</p>
-            <h7 class="p-name">Ülker Napoliten</h7>
-            <p class="p-width"> 33 g </p>
-
-          </div>
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div> 
-        </div>
-        <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/süt.jpeg" alt="" class="p-img">
-            <p class="p-price">₺12,75</p>
-            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
-            <p class="p-width"> 1 L </p>
-          </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
-        </div>
-        <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/makarna.jpeg" alt="" class="p-img">
-            <p class="p-price">₺6,99</p>
-            <h7 class="p-name">Ankara Makarna</h7>
-            <p class="p-width"> 6x200 mL </p>
-          </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
-        </div>
-        <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/cips.jpeg" alt="" class="p-img">
-            <p class="p-price">₺10,75</p>
-            <h7 class="p-name">Lay's Mevsim Yeşillikli</h7>
-            <p class="p-width"> 96 g </p>
-
-          </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
-        </div>
-        <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/mcun.jpeg" alt="" class="p-img">
-            <p class="p-price">₺38,75</p>
-            <h7 class="p-name">Colgate Optik White</h7>
-            <p class="p-width">75 ml </p>
-
-          </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
-        </div>
-        <div class="product-card">
-          <div class="p-image">
-            <img src="assets/images/soda.jpeg" alt="" class="p-img">
-            <p class="p-price">₺3,75</p>
-            <h7 class="p-name">Kızılay Erzincan</h7>
-            <p class="p-width"> 6x200 mL </p>
-
-          </div>
-          <div class="add-btn-container">
-            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
-            </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
             <p class="p-price">₺6,75</p>
@@ -422,33 +413,36 @@
             <p class="p-width"> 33 g </p>
 
           </div>
+         
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/süt.jpeg" alt="" class="p-img">
             <p class="p-price">₺12,75</p>
             <h7 class="p-name">İçim %3 Yağlı Süt</h7>
             <p class="p-width"> 1 L </p>
           </div>
+        
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/makarna.jpeg" alt="" class="p-img">
             <p class="p-price">₺6,99</p>
             <h7 class="p-name">Ankara Makarna</h7>
             <p class="p-width"> 6x200 mL </p>
           </div>
+          
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/cips.jpeg" alt="" class="p-img">
             <p class="p-price">₺10,75</p>
@@ -456,11 +450,12 @@
             <p class="p-width"> 96 g </p>
 
           </div>
+          
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/mcun.jpeg" alt="" class="p-img">
             <p class="p-price">₺38,75</p>
@@ -468,11 +463,12 @@
             <p class="p-width">75 ml </p>
 
           </div>
+          
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/soda.jpeg" alt="" class="p-img">
             <p class="p-price">₺3,75</p>
@@ -480,11 +476,12 @@
             <p class="p-width"> 6x200 mL </p>
 
           </div>
+          
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
             <p class="p-price">₺6,75</p>
@@ -492,30 +489,96 @@
             <p class="p-width"> 33 g </p>
 
           </div>
+      
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
-        </div>
-        <div class="product-card">
           <div class="p-image">
             <img src="assets/images/süt.jpeg" alt="" class="p-img">
             <p class="p-price">₺12,75</p>
             <h7 class="p-name">İçim %3 Yağlı Süt</h7>
             <p class="p-width"> 1 L </p>
           </div>
+         
+        </div>
+        <div class="product-card">
           <div class="add-btn-container">
             <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
             </div>
+          <div class="p-image">
+            <img src="assets/images/makarna.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,99</p>
+            <h7 class="p-name">Ankara Makarna</h7>
+            <p class="p-width"> 6x200 mL </p>
+          </div>
+        
         </div>
+        <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+          <div class="p-image">
+            <img src="assets/images/cips.jpeg" alt="" class="p-img">
+            <p class="p-price">₺10,75</p>
+            <h7 class="p-name">Lay's Mevsim Yeşillikli</h7>
+            <p class="p-width"> 96 g </p>
 
+          </div>
+       
+        </div>
+        <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+          <div class="p-image">
+            <img src="assets/images/mcun.jpeg" alt="" class="p-img">
+            <p class="p-price">₺38,75</p>
+            <h7 class="p-name">Colgate Optik White</h7>
+            <p class="p-width">75 ml </p>
 
+          </div>
+          
+        </div>
+        <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+          <div class="p-image">
+            <img src="assets/images/soda.jpeg" alt="" class="p-img">
+            <p class="p-price">₺3,75</p>
+            <h7 class="p-name">Kızılay Erzincan</h7>
+            <p class="p-width"> 6x200 mL </p>
 
+          </div>
+        
+        </div>
+        <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+          <div class="p-image">
+            <img src="assets/images/çikolata.jpeg" alt="" class="p-img">
+            <p class="p-price">₺6,75</p>
+            <h7 class="p-name">Ülker Napoliten</h7>
+            <p class="p-width"> 33 g </p>
 
-
-
-
-
-
+          </div>
+      
+        </div>
+        <div class="product-card">
+          <div class="add-btn-container">
+            <i class="fa-solid fa-plus add-btn-fav" onclick="showSignInModal()"></i>
+            </div>
+          <div class="p-image">
+            <img src="assets/images/süt.jpeg" alt="" class="p-img">
+            <p class="p-price">₺12,75</p>
+            <h7 class="p-name">İçim %3 Yağlı Süt</h7>
+            <p class="p-width"> 1 L </p>
+          </div>
+       
+        </div>
       </div>
 
       <div class="getir-banner">
@@ -562,23 +625,30 @@
   </section>
   <section class="card-down container-fluid">
     <div class="card1">
+      <div class="card-image-area">
       <img src="assets/images/card1.png" class="card-img">
+    </div>
       <p class="card-title">Her siparişinize bir kampanya</p>
       <p class="card-desc">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
-    </div>
+   
+  </div>
     <div class="card1">
+      <div class="card-image-area">
       <img src="assets/images/x.png" class="card-img">
+    </div>
       <p class="card-title">Dakikalar içinde kapınızda</p>
       <p class="card-desc">Dakikalar içinde kapınızda.</p>
     </div>
     <div class="card1">
+      <div class="card-image-area">
       <img src="assets/images/card2.png" class="card-img">
+    </div>
       <p class="card-title">Binlerce çeşit mutluluk</p>
       <p class="card-desc">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
     </div>
 
   </section>
-  <!-- <div class="footer-clean">
+  <div class="footer-clean">
     <footer>
       <div class="container-fluid">
         <div class="row footer-des ">
@@ -646,7 +716,7 @@
         </div>
       </div>
     </footer>
-  </div> -->
+  </div> 
 
   <!--MODAL PART-->
 

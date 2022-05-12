@@ -32,6 +32,20 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 
+//For Mobile Slide
+var sliderIndex = 0;
+slider();
+function slider() {
+  var i;
+  var x = document.getElementsByClassName("mobile-slide-image");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  sliderIndex++;
+  if (sliderIndex > x.length) {sliderIndex = 1}
+  x[sliderIndex-1].style.display = "block";
+  setTimeout(slider, 2000); // Change image every 2 seconds
+}
 
 
 const openCategoryPage = () => {

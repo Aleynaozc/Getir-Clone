@@ -1,17 +1,13 @@
 .header-getir {
+    display: block;
     background-color: var(--bttn-color);
-    height: 75px;
-    max-height: 80px;
+    height: 64px;
+    text-align: center;
 }
-
 .getir-title {
-    color: var(--getir-color);
-    font-family: var(--font-fam);
-    font-size: 30px;
-    font-weight: 900px;
-    margin-left: 55px;
-    position: relative;
-    top: 20px;
+  width: 60px;
+  position: relative;
+  top:15px;
 }
 
 .campaign-category {

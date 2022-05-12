@@ -13,13 +13,14 @@
   width: 100%;
   font-family: var(--font-fam);
   background-color: rgb(249 249 250);
+ 
 }
 
 *{
   
   margin:0;
   padding: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "sans-serif";
+
 }
 
 .header {
@@ -29,6 +30,9 @@
  color: var(--white-col);
  background-color: var(--bg-color) ;
 
+}
+.header-getir{
+  display:none;
 }
 .tab{
  display: flex;
@@ -157,15 +161,17 @@
   top:20px;
   margin-right: 0px;
 }
-.modal-content-signup .entr-phne{
-  width: 271px;
-  height: 55px; 
-}
+
 .modal-content-signup .cntry-code{
   width:100px;
   position:relative;
   right:20px;
  
+}
+.cntry-code2{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 input[type=checkbox] {
   accent-color: var(--bttn-color);
@@ -531,8 +537,11 @@ input[type="radio"]:focus {
   margin-right:20px;
   height:60px ;
   display:flex;
+  width:inherit;
   position: relative;
+  
   top:8px;
+  align-items: center;
 }
 
 .cntry-code{
@@ -542,6 +551,7 @@ input[type="radio"]:focus {
   border-color: #a4a3a37d;
   border-width: 1.5px;
   text-align: center;
+  
 }
  .cntry-code:hover{
   border-color: var(--bg-color);
@@ -550,9 +560,9 @@ input[type="radio"]:focus {
 
 
 .entr-phne{
-  position: relative;
+  margin-left: 10px;
   left:10px;
-  width: 260px;
+  width: 240px;
   height: 55px; 
   border-color: #a4a3a37d;
   border-radius:5px;
@@ -580,7 +590,7 @@ input[type="radio"]:focus {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  left:30px;
+  left:20px;
   top:20px;
 }
 #signInUpModal .phone-btn{
@@ -683,8 +693,8 @@ font-size:13px;
 }
 .t-camp{
   font-size: 16px;  
-  padding-left: 50px;
-  left:200px;
+  padding-left: 100px;
+  
   margin-bottom: 0px;
   color:black;
 }
@@ -722,13 +732,18 @@ font-size:13px;
 }
 
 .fav-product{
-  margin-left: 80px;
-  margin-right: 99px;
+   margin-right: 150px;
+   margin-left: 100px;
   background-color: rgb(255, 255, 255);
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  display: grid;
+  grid-template-columns: 153px 153px 153px 153px 153px 153px 153px 153px;
+  grid-template-rows: 170px 170px;
+  row-gap: 40px;
+  border-radius: 8px;
 }
 
 .product-card{
@@ -736,17 +751,19 @@ font-size:13px;
   max-width: 153px;
   height:238px;
   background-color: var(--white-col);
-  border:1px solid rgba(150, 150, 150, 0.128);
-  display: flex;
+  border-right: 1px solid#f3f3f3d2;
+  display: block;
   justify-content: center;
   text-align: center;
+  
+  
 }
 p{
   margin-bottom: 0!important;
 }
 .p-image{
-  width: 153px;
-  max-width: 153px;
+  width: 140px;
+  max-width: 140px;
 }
 .p-img{
   width: 120px;
@@ -755,7 +772,7 @@ p{
 .add-btn-container{
   position: absolute;
   margin-top: 10px;
-  margin-left: 83px;
+  margin-left: 110px;
   width: 32px;
   height: 32px;
   background-color: #ffffff;
@@ -917,7 +934,11 @@ display: flex;
 .card-img{
   
   width: 10px;
-  height: 190px;
+  height: 140px;
+}
+.card-image-area{
+  width: 150px;
+  height: 150px;
 }
 .card-title{
   font-size:20px;
@@ -1082,6 +1103,15 @@ left: 100px;
   color:#6c4ccb;
   
  }
+ .select-adress{
+   display:none;
+ }
+ .for-mobile-slider{
+   display: none;
+ }
+ .signup-area{
+   display: none;
+ }
  
  @media only screen and (max-width:1023px) {
   
@@ -1202,5 +1232,224 @@ left: 100px;
     margin-top:10px;
   
     width: 190px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container-fluid{
+    overflow: hidden;
+  }
+  .tab{
+    width:400px;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .tablinks{
+    font-size: 14px;
+    width:90px;
+    left:0px;
+    right: 0px;
+    padding: 5px;
+  }
+  .tablinks:hover{
+    width: 90px; 
+  }
+ 
+  .tab-left{
+    display: none;
+  }
+  .slider{
+    display: none;
+  }
+  .header-getir {
+    display: block;
+    background-color: var(--bttn-color);
+    height: 64px;
+    text-align: center;
+}
+.getir-title {
+  width: 60px;
+  position: relative;
+  top:15px;
+}
+.select-adress{
+  display: block;
+  height:40px;
+  padding:10px;
+  background-color: white;
+}
+.fa-location-dot{
+  color:#6244be;
+  font-size:15px;
+  margin-right:10px;
+}
+.adress-title{
+  font-size:14px;
+  font-weight: 900;
+}
+.for-mobile-slider{
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slide-mobile{
+  display: flex;
+  width: inherit;
+}
+.mobile-slide-image{
+  height:374px;
+  width: inherit;
+}
+.slide-img{
+  width: inherit;
+  height:374px;
+}
+
+  .campaign{
+    display: none;
+  }
+  .phone-num{
+
+ width: 100%;
+}
+
+  .signup-area{
+    display:block;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: row;
+    
+  
+  }
+  .signup-area-title{
+    text-align: center;
+    margin-top: 20px;
+    color:var(--bttn-color);
+    font-weight: 900;
+    font-size:17px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .cntry-code2{
+  
+    width: 95%;
+   
+  }
+  .entr-phne{
+   width: 78%;
+  
+  }
+  .phone-btn{
+   
+    width: 95%;
+    left:20px;
+
+  }
+  .title-cat{
+   
+    padding-top:20px;
+    padding-left: 20px;
+    background-color: #f5f5f5;
+    left:200px ;
+    margin-bottom: 0;
+    font-family: 'Courgette', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+  }
+  .category{
+    width:100%;
+    background-color: #f5f5f5;
+   
+  }
+  .cat-img{
+    position: relative;
+    top:10px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: 130px 135px 135px 135px  ;
+    grid-template-rows: 100px 100px;
+    margin-left: 10px;
+    row-gap: 40px;
+    width: inherit;
+  
+  }
+  .card-body{
+    font-family: 'Courgette', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+   
+    
+  }
+  .card-text-s{
+    font-size:15px;
+  }
+  .t-camp{
+   padding-left: 20px;
+    margin-top:7px;
+    padding: 10px;
+    height: 40px;
+    background-color: var(--white-col);
+  
+  }
+  .fav-product{
+    margin-top: 0px;
+    background-color: var(--white-col);
+    margin-left: 0px;
+    width: 100%;
+    justify-content: space-around;
+   
+  }
+  .product-card{
+    width:inherit;
+    
+    height:238px;
+    justify-content: center;
+    text-align: center;
+    border:none;
+    display: block;
+  }
+  .p-image{
+    margin-left: 60px;
+    width: 86px;
+    height:86px;
+    border:1px solid rgb(223, 220, 220);
+  }
+  .p-img{
+    width: 84px;
+    height: 84px;
+  }
+  .add-btn-container{
+    margin-left:130px;
+    margin-top: -8px;
+  }
+  .card-down{
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+  }
+  .card1{
+   margin-left: 0px;
+   margin-bottom: 10px;
+    width:100%;
+    height:100%;
+    border-radius: 0px;
+    max-width:100%;
+    background-color: var(--white-col);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 30px;
+  }
+  .card-img{
+    width: 100px;
   }
 }
