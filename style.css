@@ -67,6 +67,7 @@
 }
 .tab .tablinks:focus{
  color: var(--ornge-clr);
+ background-color: var(--bttn-color);
 }
 .tab-left{
  width: 720px;
@@ -730,18 +731,20 @@ font-size:13px;
   
   
 }
+.fav-product-area{
+  padding: 70px;
+}
 
 .fav-product{
-   margin-right: 150px;
-   margin-left: 100px;
+  
   background-color: rgb(255, 255, 255);
-  margin-top: 20px;
+ 
   display: flex;
   flex-wrap: wrap;
   position: relative;
   display: grid;
-  grid-template-columns: 153px 153px 153px 153px 153px 153px 153px 153px;
-  grid-template-rows: 170px 170px;
+  grid-template-columns: 163px 163px 163px 160px 160px 160px 160px 160px;
+  grid-template-rows: 170px 170px ;
   row-gap: 40px;
   border-radius: 8px;
 }
@@ -901,6 +904,7 @@ display: flex;
   font-weight: 200px;
 }
 .card-body{
+  padding:10px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -911,6 +915,10 @@ display: flex;
   position: relative;
   width: 100%;
   height: 412px;
+
+}
+.card__area{
+  padding:20px 70px 20px 90px;
   display: flex;
   align-items: center;
   background-color:rgb(249 249 250);
@@ -931,15 +939,16 @@ display: flex;
   align-items: center;
   padding: 30px;
 }
+.card-image-area{
+  width: 200px;
+  height: 200px;
+}
 .card-img{
   
-  width: 10px;
-  height: 140px;
+  width: inherit;
+  height: inherit;
 }
-.card-image-area{
-  width: 150px;
-  height: 150px;
-}
+
 .card-title{
   font-size:20px;
   color:var(--bttn-color);
@@ -1031,7 +1040,7 @@ left: 100px;
 
 }
 .footer-des{
-  margin-right: 200px;
+
  
 }
 .container-fluid .copyright {
