@@ -22,7 +22,9 @@
   padding: 0;
 
 }
-
+a{
+  text-decoration: none;
+}
 .header {
  width: 100%;
  position: relative;
@@ -165,7 +167,6 @@
 
 .modal-content-signup .cntry-code{
   width:100px;
-  position:relative;
   right:20px;
  
 }
@@ -213,27 +214,8 @@ input[type=checkbox] {
   text-decoration: none;
   cursor: pointer;
 }
-.modal-content-signup .modal-down{
-  width: 445px;
-  margin-top:20px;
-  height:65px;
-  right:0;
-  text-align: center;
-  
- 
-}
-.modal-content-signup .modal-down p{
- font-size:15px;
- color:rgb(105, 112, 122);
- position: relative;
- top:20px;
-}
-.modal-content-signup .modal-down a{
-  font-size:15px;
-  color:rgb(93 62 188);
-  text-decoration: none;
-  
- }
+
+
 .check-model3{
   margin-top:60px;
   display: flex;
@@ -611,15 +593,18 @@ input[type="radio"]:focus {
   
 }
 .modal-down{
-  background-color:  rgb(245 245 245);
   width:443px;
   line-height: 24px;
-  left:-20px;
+
   position: relative;
   margin-top:50px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius:10px ;
   height: 47px;
+  border-radius: 8px;
+  background-color: rgb(234, 234, 234);
+  color:var(--white-col);
+  
 }
 .modal-down p{
 position: relative;
@@ -627,9 +612,19 @@ top:10px;
 color:rgba(128, 128, 128, 0.728);
 font-size:13px;
 }
-
-
-
+.modal-down2{
+  position: fixed;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 47px;
+  width: 485px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #e6e6e6;
+  left: 470px;
+}
 
 .phone-btn:hover{
   background-color: var(--bttn-color);

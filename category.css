@@ -116,17 +116,12 @@
     margin-left: 20px;
     margin-right: 29px;
     background-color: rgb(255, 255, 255);
-    position: sticky;
     display: grid;
     grid-template-columns: auto auto auto auto;
-
-
 }
-
 .p-price {
     margin-top: 8px;
 }
-
 .p-image {
     cursor: pointer;
     height: 220px;
@@ -136,7 +131,6 @@
     width: 120px;
     height: 120px;
 }
-
 .category-products .product-cards {
     height: 238px;
     background-color: var(--white-col);

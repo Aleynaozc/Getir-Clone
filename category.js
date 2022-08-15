@@ -250,6 +250,15 @@ window.onclick = function (event) {
     }
 }
 
-const openIndexPage = () => {
-    window.open("index.html")
-}
+
+
+const URL = "https://localhost:44306/api/Product/ListProduct";
+
+async function getDataFromApi(URL) {
+    const response = await fetch(URL);
+    var data = await response.json();
+    console.log(data);
+    }
+    
+    getDataFromApi(URL);
+

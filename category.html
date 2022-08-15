@@ -28,9 +28,10 @@
     <!--HEADER PART-->
     <div class="header">
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'getirbutton')">
+        <a href="index.html"><button type="button" class="tablinks" onclick="openCity(event, 'getirbutton')">
           getir
-        </button>
+        </button></a>
+        
         <button class="tablinks" onclick="openCity(event, 'getiryemek')">
           getiryemek
         </button>
@@ -60,7 +61,8 @@
       </div>
     </div>
     <div class="header-getir ">
-      <img class="getir-title" src="/assets/images/getir_title-.png" onclick="openIndexPage()"></img>
+      <a href="index.html"> <img class="getir-title" src="/assets/images/getir_title-.png" alt="" onclick="openIndexPage()"></img></a>
+     
     </div>
     <!--CAMPAIGN IMAGE PART-->
     <div class="campaign-category ">
@@ -214,7 +216,7 @@
         <!--BASKET PART-->
         <div class="category-basket-card">
           <div class="category-basket">
-            <img src="assets/images/basket.png">
+            <img src="assets/images/basket.png" alt="">
             <h4 class="basket-desc-title">Sepetiniz şu an boş</h4>
             <h5 class="basket-desc-small">Sipariş vermek için sepetinize ürün ekleyin</h5>
           </div>
@@ -236,19 +238,19 @@
 
       <div class="slider-product" id="sliderProduct">
        <div class="carousel__track__container">
-        <button type="button" class="arrow-btn " id="prevbtn" > 
+        <button type="button" class="arrow-btn " id="prevbtn" aria-label="d" > 
           <i class="fa-solid fa-chevron-left "></i>
         </button>
 
         <div class="product-img ">
-          <img src="assets/images/dalin.jpeg" class="product-img-info current-slide">
-          <img src="assets/images/dalinbck.jpeg" class="product-img-info"id="bckimage">
+          <img src="assets/images/dalin.jpeg" alt="" class="product-img-info current-slide">
+          <img src="assets/images/dalinbck.jpeg" alt="" class="product-img-info"id="bckimage">
         </div>
-        <button type="button" class="arrow-btn " id="nextbtn"> <i class="fa-solid fa-chevron-right"></i></button>
+        <button type="button" class="arrow-btn " aria-label="d" id="nextbtn"> <i class="fa-solid fa-chevron-right"></i></button>
         <!-- The dots/circles -->
       </div>
         <div class="slider-dot">
-          <button class="dot-btn">
+          <button class="dot-btn" aria-label="d">
             <span class="dot selected"></span>
           </button>
         </div>
@@ -262,7 +264,7 @@
       <div class="product-price-qt">
         <div class="counter">
           <span class="down" onclick='decreaseCount(event, this)'>-</span>
-          <input type="text" value="1">
+          <input type="text" value="1" aria-label="d">
           <span class="up" onclick='increaseCount(event, this)'>+</span>
         </div>
         <div class="product-prices">
@@ -280,18 +282,18 @@
       <h7 class="modal-title">Dil değiştir</h7>
 
       <div class="form-check-lan">
-        <input class="form-check-input1" type="radio" name="flexRadioDefault" id="trbtn" checked>
+        <input class="form-check-input1" type="radio" aria-label="d" name="flexRadioDefault" id="trbtn" checked>
         <label class="form-check-label1" for="flexRadioDefault1">
           Türkçe
         </label>
-        <img class="ln-tr-flag" src="assets/images/tr-flag.png">
+        <img class="ln-tr-flag" src="assets/images/tr-flag.png" alt="">
         <hr class="new">
 
-        <input class="form-check-input2" type="radio" name="flexRadioDefault" id="engbtn">
+        <input class="form-check-input2" aria-label="d" type="radio" name="flexRadioDefault" id="engbtn">
         <label class="form-check-label2" for="flexRadioDefault2">
           English
         </label>
-        <img class="lan-flag" src="assets/images/usa.jpg">
+        <img class="lan-flag" src="assets/images/usa.jpg" alt="">
 
       </div>
       <button class="update-btn2" id="upBtn">Güncelle</button>
@@ -307,7 +309,7 @@
 
       <div class="phone-num mt-4">
         <form class="cntry-code2">
-          <select class="cntry-code">
+          <select class="cntry-code" aria-label="phone">
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
@@ -340,7 +342,7 @@
 
       <div class="phone-num mt-4">
         <form class="cntry-code2">
-          <select class="cntry-code">
+          <select class="cntry-code" aria-label="phone">
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
@@ -363,7 +365,7 @@
 
         </div>
         <div class="check-model3">
-          <input type="checkbox" checked="checked" class="checkbox-m3">
+          <input type="checkbox" checked="checked" class="checkbox-m3" aria-label="d">
           <span class="checkmarkk"></span>
           <p class="check-desc">Getir'in bana özel kampanya, tanıtım fırsatlarından haberdar olmak istiyorum.</p>
         </div>

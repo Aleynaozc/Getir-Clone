@@ -91,7 +91,7 @@
     </div>
     <!-- Added For Mobile Size -->
     <div class="header-getir ">
-      <img class="getir-title" src="/assets/images/getir_title-.png" onclick="openIndexPage()"></img>
+      <img class="getir-title" src="/assets/images/getir_title-.png" alt="" onclick="openIndexPage()"></img>
     </div>
     <div class="select-adress">
       <i class="fa-solid fa-location-dot"></i><span class="adress-title">Teslimat Adresi Belirle</span>
@@ -99,10 +99,10 @@
     <div class="for-mobile-slider">
       <div class="slide-mobile">
         <div class="mobile-slide-image">
-          <img src="assets/images/kampanya.jpeg" class="slide-img" />
+          <img src="assets/images/kampanya.jpeg" class="slide-img" alt=""  />
         </div>
         <div class="mobile-slide-image">
-          <img src="assets/images/kmpn4.jpeg"class="slide-img" />
+          <img src="assets/images/kmpn4.jpeg"class="slide-img" alt="" />
         </div>
         
       </div>
@@ -115,7 +115,7 @@
       </div>
       <div class="phone-num mt-4">
         <form class="cntry-code2">
-          <select class="cntry-code">
+          <select class="cntry-code" aria-label="phone">
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
@@ -136,20 +136,20 @@
       <div class="slider">
         <div class="slide">
           <div class="slide-image">
-            <img src="assets/images/slide1.png" />
+            <img src="assets/images/slide1.png" alt=""  />
           </div>
           <div class="slide-image">
-            <img src="assets/images/slider2.jpg" />
+            <img src="assets/images/slider2.jpg" alt="" />
           </div>
           <div class="slide-image">
-            <img src="assets/images/slider3.jpg" />
+            <img src="assets/images/slider3.jpg" alt=""  />
           </div>
           <div class="slide-image">
-            <img src="assets/images/slider4.jpg" />
+            <img src="assets/images/slider4.jpg" alt="" />
           </div>
         </div>
         <div class="slide-right">
-          <img src="assets/images/getirlogo.png" class="logo" />
+          <img src="assets/images/getirlogo.png" class="logo" alt=""  />
           <h3 class="slogan">Dakikalar içinde kapınızda</h3>
         </div>
         <div class="slide-left">
@@ -160,7 +160,7 @@
           </div>
           <div class="phone-num mt-4">
             <form class="cntry-code2">
-              <select class="cntry-code">
+              <select class="cntry-code" aria-label="phone">
                 <option value="1">+1</option>
                 <option value="2">+2</option>
                 <option value="3">+3</option>
@@ -179,119 +179,167 @@
       </div>
       <p class="title-cat">Kategoriler</p>
       <div class="category">
-
         <div class="cat-img">
+          <a href="category.html">
           <div class="card-category-cont">
-            <img class="card-img-top" src="assets/images/yeniürün.jpeg" alt="Card image cap" id="yeniurunımg" onclick="openCategoryPage()">
-             <div class="card-body">
-             <span class="card-text-s">Yeni Ürünler</span>
-            </div>
+            <img class="card-img-top" src="assets/images/yeniürün.jpeg" alt="Card image cap" id="yeniurunımg" >
+              <div class="card-body">
+                <span class="card-text-s">Yeni Ürünler</span>
+               </div>
           </div>
+        </a> 
+        <a href="category.html">
           <div class="card-category-cont">
-            <img class="card-img-top" src="assets/images/indirim.jpeg" alt="Card image cap" id="indirimlerımg"onclick="openCategoryPage()" >
+            <img class="card-img-top" src="assets/images/indirim.jpeg" alt="Card image cap" id="indirimlerımg" >
             <div class="card-body">
               <p class="card-text-s">İndirimler</p>
             </div>
           </div>
+        </a>
+        <a href="category.html">
           <div class="card-category-cont">
-            <img class="card-img-top" src="assets/images/suicecek.jpeg" alt="Card image cap" id="suicecekImg" onclick="openCategoryPage()">
+            <img class="card-img-top" src="assets/images/suicecek.jpeg" alt="Card image cap" id="suicecekImg" >
             <div class="card-body">
               <p class="card-text-s">Su & İçecek</p>
             </div>
           </div>
-
-          <div class="card-category-cont">
-            <img class="card-img-top" src="assets/images/meyvesbze.jpeg" alt="Card image cap" id="meyvesebzeImg" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Meyve & Sebze</p>
+        </a>
+        
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="assets/images/meyvesbze.jpeg" alt="Card image cap" id="meyvesebzeImg" >
+              <div class="card-body">
+                <p class="card-text-s">Meyve & Sebze</p>
+              </div>
             </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="assets/images/fırından.jpeg" alt="Card image cap" id="fırındanImg" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Fırından</p>
+          </a>
+         
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="assets/images/fırından.jpeg" alt="Card image cap" id="fırındanImg" >
+              <div class="card-body">
+                <p class="card-text-s">Fırından</p>
+              </div>
             </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/56dfe03cf82055030022cdc0_1619242841966_1619242842053.jpeg" alt="Card image cap"id="atıstırmalıkImg" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Atıştırmalık</p>
+          </a>
+         
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/56dfe03cf82055030022cdc0_1619242841966_1619242842053.jpeg" alt="Card image cap"id="atıstırmalıkImg" >
+              <div class="card-body">
+                <p class="card-text-s">Atıştırmalık</p>
+              </div>
             </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/55bca8484dcda90c00e3aa80_1619242741382_1619242741482.jpeg" alt="Card image cap"id="dondurmaImg" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Dondurma</p>
+          </a>
+         
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/55bca8484dcda90c00e3aa80_1619242741382_1619242741482.jpeg" alt="Card image cap"id="dondurmaImg" >
+              <div class="card-body">
+                <p class="card-text-s">Dondurma</p>
+              </div>
             </div>
-          </div>
-
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/5cfe685e25d48100016b7ea6_b05535e0-a936-4c79-8d89-10db178a928c.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Süt ürünleri</p>
+          </a>
+         
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/5cfe685e25d48100016b7ea6_b05535e0-a936-4c79-8d89-10db178a928c.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Süt ürünleri</p>
+              </div>
             </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/61a78ebbdea800061135fd19_1ae7279d-6ab8-4ee1-b58b-9a29695ad314.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Kahvaltılık</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5d_1619242660025_1619242660107.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Yiyecek</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/57e2996551f3ee030027e28b_1619242858559_1619242858642.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Fit & Form</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5c_1619242651249_1619242651335.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Kişisel Bakım</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/55449fdf02632e11003c2da8_1619242719523_1619242719602.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Ev Bakım</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/5b06b056b883b700044e3e4c_1619242916956_1619242917048.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Ev & Yaşam</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c62_1619242697597_1619242697702.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Teknoloji</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/551430043427d5010a3a5c63_1619242711604_1619242711687.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Evcil Hayvan</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5b_1619242620186_1619242620271.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Bebek</p>
-            </div>
-          </div>
-          <div class="card-category-cont">
-            <img class="card-img-top" src="https://cdn.getir.com/cat/559c07b093be370c0063dd29_a16cbca7-4f5a-46fc-8f45-45d8e899f57d.jpeg" alt="Card image cap" onclick="openCategoryPage()">
-            <div class="card-body">
-              <p class="card-text-s">Cinsel Sağlık</p>
-            </div>
-          </div>
+          </a>
           
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/61a78ebbdea800061135fd19_1ae7279d-6ab8-4ee1-b58b-9a29695ad314.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Kahvaltılık</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5d_1619242660025_1619242660107.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Yiyecek</p>
+              </div>
+            </div>
+          </a>
+        
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/57e2996551f3ee030027e28b_1619242858559_1619242858642.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Fit & Form</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5c_1619242651249_1619242651335.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Kişisel Bakım</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/55449fdf02632e11003c2da8_1619242719523_1619242719602.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Ev Bakım</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/5b06b056b883b700044e3e4c_1619242916956_1619242917048.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Ev & Yaşam</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c62_1619242697597_1619242697702.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Teknoloji</p>
+              </div>
+            </div>
+          </a>
+          
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/551430043427d5010a3a5c63_1619242711604_1619242711687.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Evcil Hayvan</p>
+              </div>
+            </div>
+          </a>
+          
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="http://cdn.getir.com/cat/551430043427d5010a3a5c5b_1619242620186_1619242620271.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Bebek</p>
+              </div>
+            </div>
+          </a>
+         
+          <a href="category.html">
+            <div class="card-category-cont">
+              <img class="card-img-top" src="https://cdn.getir.com/cat/559c07b093be370c0063dd29_a16cbca7-4f5a-46fc-8f45-45d8e899f57d.jpeg" alt="Card image cap" >
+              <div class="card-body">
+                <p class="card-text-s">Cinsel Sağlık</p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
@@ -584,7 +632,7 @@
       </div>
     </div>
       <div class="getir-banner">
-        <img src="assets/images/banner.jpg" class="banner-img">
+        <img src="assets/images/banner.jpg" class="banner-img" alt="" >
         <div class="banner-right">
           <h3 class="banner-title">Getir'i indirin!</h3>
           <p>İstediğiniz ürünleri dakikalar içinde kapınıza getirelim.</p>
@@ -600,7 +648,7 @@
             </div>
             <div class="app-btn">
               <div class="title-icon">
-                <img src="assets/images/googleplay.png" class="googleplay">
+                <img src="assets/images/googleplay.png" class="googleplay" alt="" >
 
                 <p class="app-title">Google Play </p>
               </div>
@@ -609,7 +657,7 @@
             </div>
             <div class="app-btn">
               <div class="title-icon">
-                <img src="assets/images/appgallery.png" class="appgallery">
+                <img src="assets/images/appgallery.png" class="appgallery" alt="" >
 
                 <p class="app-title">AppGallery </p>
                 <span class="gal-title">İle Keşfedin</span>
@@ -629,7 +677,7 @@
     <div class="card__area">
     <div class="card1">
       <div class="card-image-area">
-      <img src="assets/images/card1.png" class="card-img">
+      <img src="assets/images/card1.png" class="card-img" alt="" >
     </div>
       <p class="card-title">Her siparişinize bir kampanya</p>
       <p class="card-desc">Getir’de vereceğiniz her siparişe uygun bir kampanya bulabilirsiniz.</p>
@@ -637,14 +685,14 @@
   </div>
     <div class="card1">
       <div class="card-image-area">
-      <img src="assets/images/x.png" class="card-img">
+      <img src="assets/images/x.png" class="card-img" alt="" >
     </div>
       <p class="card-title">Dakikalar içinde kapınızda</p>
       <p class="card-desc">Dakikalar içinde kapınızda.</p>
     </div>
     <div class="card1">
       <div class="card-image-area">
-      <img src="assets/images/card2.png" class="card-img">
+      <img src="assets/images/card2.png" class="card-img" alt="" >
     </div>
       <p class="card-title">Binlerce çeşit mutluluk</p>
       <p class="card-desc">Getir’de binlerce çeşit arasından seçiminizi yapabilirsiniz.</p>
@@ -658,9 +706,9 @@
           <div class="col-sm-4 col-md-3 item ">
             <h5>Getir'i İndirin!</h5>
             <div class="app-container2">
-              <img src="assets/images/appstore.png" class="footer-app">
-              <img src="assets/images/appstore.png" class="footer-app">
-              <img src="assets/images/appstore.png" class="footer-app">
+              <img src="assets/images/appstore.png" class="footer-app" alt="" >
+              <img src="assets/images/appstore.png" class="footer-app" alt="" >
+              <img src="assets/images/appstore.png" class="footer-app" alt="" >
             </div>
           </div>
           <div class="col-sm-4 col-md-3 item ">
@@ -696,7 +744,7 @@
           </div>
           <div class="col-sm-4 col-md-3 item qr ">
             <div class="qr-img"></div>
-            <img src="assets/images/qr.png" class="qr-image">
+            <img src="assets/images/qr.png" class="qr-image" alt="" >
 
           </div>
 
@@ -731,18 +779,18 @@
       <h7 class="modal-title">Dil değiştir</h7>
 
       <div class="form-check-lan">
-        <input class="form-check-input1" type="radio" name="flexRadioDefault" id="trbtn" checked>
+        <input class="form-check-input1" type="radio" name="flexRadioDefault" aria-label="d" id="trbtn" checked>
         <label class="form-check-label1" for="flexRadioDefault1">
           Türkçe
         </label>
-        <img class="ln-tr-flag" src="assets/images/tr-flag.png">
+        <img class="ln-tr-flag" src="assets/images/tr-flag.png" alt="" >
         <hr class="new">
 
-        <input class="form-check-input2" type="radio" name="flexRadioDefault" id="engbtn">
+        <input class="form-check-input2" type="radio" name="flexRadioDefault" aria-label="d" id="engbtn">
         <label class="form-check-label2" for="flexRadioDefault2">
           English
         </label>
-        <img class="lan-flag" src="assets/images/usa.jpg">
+        <img class="lan-flag" src="assets/images/usa.jpg" alt="" >
 
       </div>
       <button class="update-btn2" id="upBtn">Güncelle</button>
@@ -760,7 +808,7 @@
 
       <div class="phone-num mt-4">
         <form class="cntry-code2">
-          <select class="cntry-code">
+          <select class="cntry-code" aria-label="phone">
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
@@ -792,7 +840,7 @@
 
       <div class="phone-num mt-4">
         <form class="cntry-code2">
-          <select class="cntry-code">
+          <select class="cntry-code" aria-label="phone">
             <option value="1">+1</option>
             <option value="2">+2</option>
             <option value="3">+3</option>
@@ -815,7 +863,7 @@
 
         </div>
         <div class="check-model3">
-          <input type="checkbox" checked="checked" class="checkbox-m3">
+          <input type="checkbox" checked="checked" class="checkbox-m3" aria-label="d">
           <span class="checkmarkk"></span>
           <p class="check-desc">Getir'in bana özel kampanya, tanıtım fırsatlarından haberdar olmak istiyorum.</p>
         </div>
@@ -833,11 +881,11 @@
       <div class="">
         <button class="signup-btn">Kayıt Ol</button>
       </div>
-      <div class="modal-down">
-        <p>Getir'e üyeyseniz <a href="#" id="movesignin" onclick="showSignInModal()">Giriş yap </a></p>
-      </div>
+      
     </div>
-
+    <div class="modal-down2">
+      <p>Getir'e üyeyseniz <a href="#" id="movesignin" onclick="showSignInModal()">Giriş yap </a></p>
+    </div>
   </div>
 
 
